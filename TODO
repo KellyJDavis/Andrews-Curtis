@@ -1,1 +1,0 @@
-1. Introduce g_relators_count mutexes s_in_values, one for each list in in_values and lock each list seperately
