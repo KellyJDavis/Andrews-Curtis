@@ -3,7 +3,7 @@
 //  Andrews-Curtis Conjecture
 //
 //  Created by Kelly Davis on 9/17/11.
-//  Copyright 2011 Kelly Davis. All rights reserved.
+//
 //
 
 #ifndef Andrews_Curtis_Conjecture_binary_tree_h

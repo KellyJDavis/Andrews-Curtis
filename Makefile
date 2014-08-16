@@ -3,7 +3,7 @@
 #  Andrews-Curtis Conjecture
 #
 #  Created by Kelly Davis on 8/27/11.
-#  Copyright 2011 Kelly Davis. All rights reserved.
+#
 #
 
 CXX = mpic++
