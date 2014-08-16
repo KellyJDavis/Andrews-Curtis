@@ -189,8 +189,8 @@ namespace andrews_curtis
       				// Print Average Relator length
       				std::cout << "\tAverage Relator Length: " << (static_cast<double>(global_relator_length)/global_relator_size) << std::endl;
 
-      				// Print Average Relator length
-      				std::cout << "\tAverage Balanced_presentation Length: " << g_relators_count*(static_cast<double>(global_relator_length)/global_relator_size) << std::endl;
+      				// Print Average Balanced presentation length
+      				std::cout << "\tAverage Balanced presentation Length: " << g_relators_count*(static_cast<double>(global_relator_length)/global_relator_size) << std::endl;
       			}
 
       			// Obtain size of s_balanced_presentation_queue
