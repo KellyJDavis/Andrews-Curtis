@@ -97,19 +97,19 @@ namespace andrews_curtis
         // Return result
         return to_string;
     }
-	
-	inline size_t Balanced_presentation::get_length() const
-	{
-		// Define variable to hold length
-		size_t length = 0;
-		
-		// Loop over relators and summ their lengths
-		for(int index = 0; index < g_relators_count; ++index)
-			length += m_relators[index]->get_length();
-		
-		// Return length
-		return length;
-	}
+    
+    inline size_t Balanced_presentation::get_length() const
+    {
+        // Define variable to hold length
+        size_t length = 0;
+        
+        // Loop over relators and summ their lengths
+        for(int index = 0; index < g_relators_count; ++index)
+            length += m_relators[index]->get_length();
+        
+        // Return length
+        return length;
+    }
     
     inline Balanced_presentation &Balanced_presentation::operator=(const Balanced_presentation &rhs)
     {
@@ -191,7 +191,8 @@ namespace andrews_curtis
     // Union allowing serialization of a pointer to a Balanced_presentation,
     // while not serializing the Balanced_presentation itself. The apropos
     // member is used to obtain the pointer as a number or number as a pointer.
-    union Intpoint {
+    union Intpoint
+    {
         // The number
         unsigned long number;
         

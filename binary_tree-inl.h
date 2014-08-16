@@ -11,11 +11,11 @@
 
 
 namespace andrews_curtis
-{	
-	// Define Binary_tree<T>::s_root
+{    
+    // Define Binary_tree<T>::s_root
     template <class T>
     T *Binary_tree<T>::s_root = 0; 
-	
+    
     // Define Binary_tree<T>::m_mutex
     template <class T>
     boost::mutex Binary_tree<T>::m_mutex;
@@ -32,10 +32,10 @@ namespace andrews_curtis
     template <class T>
     inline T *Binary_tree<T>::insert(T *element)
     {
-    		// Lock m_mutex
-    		boost::lock_guard<boost::mutex> lock_guard(m_mutex);
-    		
-    		// If the tree is empty, add element
+        // Lock m_mutex
+        boost::lock_guard<boost::mutex> lock_guard(m_mutex);
+            
+        // If the tree is empty, add element
         if(!s_root)
         {
             // Set s_root
@@ -60,8 +60,8 @@ namespace andrews_curtis
             // If element == current_element, element is already there
             if(*element == *current_element)
                 return current_element;
-			
-    			  // If element < current_element
+            
+            // If element < current_element
             if(*element < *current_element)
             {
                 // If current_element has no left child
@@ -72,19 +72,19 @@ namespace andrews_curtis
                     
                     // Increment m_size
                     ++m_size;
-					
-        					  // Increment m_length
-        					  m_length += element->get_length();
-        					
-        					  // Return 0 indicating the element was inserted
+                    
+                    // Increment m_length
+                    m_length += element->get_length();
+                            
+                    // Return 0 indicating the element was inserted
                     return 0;
                 }
                 else
                 {
                     // If current_element has a left child, use it as current_element
                     current_element = current_element->m_left;
-					
-					          // Continue to while
+                    
+                    // Continue to while
                     continue;
                 }
             }
@@ -98,51 +98,51 @@ namespace andrews_curtis
                     
                     // Increment m_size
                     ++m_size;
-					
-        					  // Increment m_length
-        					  m_length += element->get_length();
-        					
-        					  // Return 0 indicating the element was inserted
+                    
+                    // Increment m_length
+                    m_length += element->get_length();
+                            
+                    // Return 0 indicating the element was inserted
                     return 0;
                 }
                 else
                 {
                     // If current_element has a right child, use it as current_element
                     current_element = current_element->m_right;
-					
-					          // Continue to while
+                    
+                              // Continue to while
                     continue;
                 }
             }
         }
     }
     
-	template <class T>
-	inline unsigned long Binary_tree<T>::size()
-	{
-		// Lock m_mutex
-		boost::lock_guard<boost::mutex> lock_guard(m_mutex);
-		
-		// Return the size
-		return m_size;
-	}
+    template <class T>
+    inline unsigned long Binary_tree<T>::size()
+    {
+        // Lock m_mutex
+        boost::lock_guard<boost::mutex> lock_guard(m_mutex);
+        
+        // Return the size
+        return m_size;
+    }
     
-	template <class T>
-	inline unsigned long Binary_tree<T>::length()
-	{
-		// Lock m_mutex
-		boost::lock_guard<boost::mutex> lock_guard(m_mutex);
-		
-		// Return the size
-		return m_length;
-	}
-	
+    template <class T>
+    inline unsigned long Binary_tree<T>::length()
+    {
+        // Lock m_mutex
+        boost::lock_guard<boost::mutex> lock_guard(m_mutex);
+        
+        // Return the size
+        return m_length;
+    }
+    
     template <class T>
     inline void Binary_tree<T>::clear()
     {
-		// Lock m_mutex
-		boost::lock_guard<boost::mutex> lock_guard(m_mutex);
-		
+        // Lock m_mutex
+        boost::lock_guard<boost::mutex> lock_guard(m_mutex);
+        
         // Clear s_root
         clear(s_root);
         

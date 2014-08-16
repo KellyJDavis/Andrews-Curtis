@@ -34,30 +34,30 @@ namespace andrews_curtis
         /// \return The equivalent instance already in the tree or 0
         ///
         static T *insert(T *element);
-		
-    		///
-    		/// Obtains the size of this binary tree
-    		///
-    		/// \return The size of this binary tree
-    		///
-    		static unsigned long size();
-    		
-    		///
-    		/// Obtains the length of this binary tree
-    		///
-    		/// \return The length of this binary tree
-    		///
-    		static unsigned long length();
+        
+        ///
+        /// Obtains the size of this binary tree
+        ///
+        /// \return The size of this binary tree
+        ///
+        static unsigned long size();
+            
+        ///
+        /// Obtains the length of this binary tree
+        ///
+        /// \return The length of this binary tree
+        ///
+        static unsigned long length();
         
         ///
         /// Clear the binary tree of all elements and calls the destructor
         /// of each contained element.
         ///
         static void clear();
-		
-		/// Mutex for the tree
-		static boost::mutex m_mutex;
-		
+        
+        /// Mutex for the tree
+        static boost::mutex m_mutex;
+        
         
     private:
         /// The root of the binary tree
@@ -68,7 +68,7 @@ namespace andrews_curtis
         
         /// The length of the binary tree's elements
         static unsigned long m_length;
-		
+        
         
     private:
         /// Utility function used by clear

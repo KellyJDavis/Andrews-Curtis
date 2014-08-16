@@ -17,10 +17,10 @@
 namespace andrews_curtis
 {
     // Define globals
-	long g_children_count = 0;
-	long g_relators_count = 0;
-	long g_bits_per_letter = 0;
-	long g_generators_count = 0;
+    long g_children_count = 0;
+    long g_relators_count = 0;
+    long g_bits_per_letter = 0;
+    long g_generators_count = 0;
     
     Arguments::Arguments(int argc,char *argv[])
     :   m_message(),

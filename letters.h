@@ -19,7 +19,6 @@ namespace andrews_curtis
     class Letters
     {
     public:
-        
         //
         // Returns an array of bools that represents the passed letter. The passed
         // number identifies a letter as follows: ...B=-2,A=-1,a=1,b=1... each one
