@@ -27,5 +27,5 @@ ac :  ${OBJS}
 	${CXX} ${CXXFLAGS} -o $@  ${OBJS} ${LDFLAGS} ${LIBS}
 
 clean:
-	rm *.o ac
+	rm -fr *.o ac
 	
