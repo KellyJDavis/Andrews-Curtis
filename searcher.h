@@ -84,7 +84,7 @@ namespace andrews_curtis
         
     private:
         /// A bool indicating triviality
-		bool m_is_trivial;
+		    bool m_is_trivial;
         
         /// The original balanced presentation
         std::string m_counterexample;
