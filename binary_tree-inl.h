@@ -32,10 +32,10 @@ namespace andrews_curtis
     template <class T>
     inline T *Binary_tree<T>::insert(T *element)
     {
-		// Lock m_mutex
-		boost::lock_guard<boost::mutex> lock_guard(m_mutex);
-		
-		// If the tree is empty, add element
+    		// Lock m_mutex
+    		boost::lock_guard<boost::mutex> lock_guard(m_mutex);
+    		
+    		// If the tree is empty, add element
         if(!s_root)
         {
             // Set s_root
@@ -61,7 +61,7 @@ namespace andrews_curtis
             if(*element == *current_element)
                 return current_element;
 			
-			// If element < current_element
+    			  // If element < current_element
             if(*element < *current_element)
             {
                 // If current_element has no left child
@@ -73,10 +73,10 @@ namespace andrews_curtis
                     // Increment m_size
                     ++m_size;
 					
-					// Increment m_length
-					m_length += element->get_length();
-					
-					// Return 0 indicating the element was inserted
+        					  // Increment m_length
+        					  m_length += element->get_length();
+        					
+        					  // Return 0 indicating the element was inserted
                     return 0;
                 }
                 else
@@ -84,7 +84,7 @@ namespace andrews_curtis
                     // If current_element has a left child, use it as current_element
                     current_element = current_element->m_left;
 					
-					// Continue to while
+					          // Continue to while
                     continue;
                 }
             }
@@ -99,10 +99,10 @@ namespace andrews_curtis
                     // Increment m_size
                     ++m_size;
 					
-					// Increment m_length
-					m_length += element->get_length();
-					
-					// Return 0 indicating the element was inserted
+        					  // Increment m_length
+        					  m_length += element->get_length();
+        					
+        					  // Return 0 indicating the element was inserted
                     return 0;
                 }
                 else
@@ -110,7 +110,7 @@ namespace andrews_curtis
                     // If current_element has a right child, use it as current_element
                     current_element = current_element->m_right;
 					
-					// Continue to while
+					          // Continue to while
                     continue;
                 }
             }
