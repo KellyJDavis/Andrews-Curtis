@@ -51,8 +51,8 @@ static std::queue<andrews_curtis::Balanced_presentation*> s_balanced_presentatio
 
 namespace andrews_curtis
 {
-    // Typedefs
-    typedef std::list<Balanced_presentation*>::iterator Itr;
+  // Typedefs
+  typedef std::list<Balanced_presentation*>::iterator Itr;
 	typedef std::queue<andrews_curtis::Balanced_presentation*>::size_type queue_size_type;
 	
 	// Utility function to obtain children
