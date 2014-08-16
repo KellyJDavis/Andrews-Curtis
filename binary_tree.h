@@ -35,19 +35,19 @@ namespace andrews_curtis
         ///
         static T *insert(T *element);
 		
-		///
-		/// Obtains the size of this binary tree
-		///
-		/// \return The size of this binary tree
-		///
-		static unsigned long size();
-		
-		///
-		/// Obtains the length of this binary tree
-		///
-		/// \return The length of this binary tree
-		///
-		static unsigned long length();
+    		///
+    		/// Obtains the size of this binary tree
+    		///
+    		/// \return The size of this binary tree
+    		///
+    		static unsigned long size();
+    		
+    		///
+    		/// Obtains the length of this binary tree
+    		///
+    		/// \return The length of this binary tree
+    		///
+    		static unsigned long length();
         
         ///
         /// Clear the binary tree of all elements and calls the destructor
