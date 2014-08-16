@@ -13,10 +13,11 @@ LIBS	  =	-lmpi \
 			-lutil \
 			-lopen-rte \
 			-lopen-pal \
-			-lboost_mpi \
-			-lboost_thread \
-			-lboost_date_time \
-			-lboost_serialization
+			-lboost_mpi-mt \
+			-lboost_thread-mt \
+      -lboost_system-mt \
+			-lboost_date_time-mt \
+			-lboost_serialization-mt
 OBJS	  =	main.o \
 			relator.o \
 			searcher.o \
