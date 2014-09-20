@@ -48,7 +48,7 @@ localhost:~ kdavis$ cd <Andrews-Curtis Root Directory>
 localhost:Andrews-Curtis kdavis$ make ac
 ```
 
-This compiles the *Andrews-Curtis* executable `ac` into the Andrews-Curtis root directory.
+This compiles the *Andrews-Curtis* executable `ac` and places it into the Andrews-Curtis root directory.
 
 ### Running the Executable
 
