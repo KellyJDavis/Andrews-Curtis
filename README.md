@@ -31,7 +31,7 @@ If it successfully proves __P__ is [trivial](http://en.wikipedia.org/wiki/Trivia
 
 *Andrews-Curtis* has the following dependencies:
 
-* An [MPI](http://en.wikipedia.org/wiki/Message_Passing_Interface) implementation (Tested with [Open MPI](http://www.open-mpi.org) version v1.8.1.)
+* An [MPI](http://en.wikipedia.org/wiki/Message_Passing_Interface) implementation (Tested with [Open MPI](http://www.open-mpi.org) version v1.8.1)
 * A [Boost](http://www.boost.org) install (Tested with version 1.55.0) with compiled, multi-threaded versions of the following libraries:
   * [boost.mpi](http://www.boost.org/doc/libs/1_55_0/doc/html/mpi.html)
   * [boost.thread](http://www.boost.org/doc/libs/1_55_0/doc/html/thread.html)
