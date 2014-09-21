@@ -76,4 +76,4 @@ If you are interesting in contributing, open an issue, code it up, and make a pu
 
 ## Credits, Inspiration, and Alternatives
 
-An alternative *Andrews-Curtis* move enumerator is [ACME](http://staff.itee.uq.edu.au/havas/ACME/).
+An alternative *Andrews-Curtis* move enumerator, and motivation for this enumerator, is [ACME](http://staff.itee.uq.edu.au/havas/ACME/).
