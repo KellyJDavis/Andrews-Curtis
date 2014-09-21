@@ -10,21 +10,6 @@ The balanced [presentation](http://en.wikipedia.org/wiki/Presentation_of_a_group
 
 If it successfully proves __P__ is [trivial](http://en.wikipedia.org/wiki/Trivial_group), it prints out the proof including all [Andrews-Curtis moves](http://www.jstor.org/stable/2033843). If it can not prove __P__ is [trivial](http://en.wikipedia.org/wiki/Trivial_group), it simply prints __P__, the original balanced [presentation](http://en.wikipedia.org/wiki/Presentation_of_a_group), indicating it is a counterexample to the [Andrews-Curtis Conjecture](http://www.jstor.org/stable/2033843).
 
-## Table of Contents
-
-* Quick Start
-* Introduction
-* Installing
-  * Checking Dependencies
-  * Building Executable
-* Running the Executable
-  * Running on a Single Node
-  * Running on a Cluster of Nodes
-* Where to get help
-* Contribution guidelines
-* Contributor list
-* Credits, Inspiration, and Alternatives
-
 ## Quick Start
 
 ### Checking Dependencies
@@ -80,3 +65,15 @@ Derivation:
 ```
 
 As `ac` is [MPI](http://en.wikipedia.org/wiki/Message_Passing_Interface) based, running it on a cluser of nodes is simple. One need only use the standard procedure for your [MPI](http://en.wikipedia.org/wiki/Message_Passing_Interface) implementation.
+
+## Contribution guidelines
+
+If you are interesting in contributing, open an issue, code it up, and make a pull request.
+
+## Contributor list
+
+[Kelly Davis](https://github.com/KellyJDavis)
+
+## Credits, Inspiration, and Alternatives
+
+An alternative *Andrews-Curtis* move enumerator is [ACME](http://staff.itee.uq.edu.au/havas/ACME/).
