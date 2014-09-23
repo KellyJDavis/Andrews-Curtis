@@ -1,4 +1,4 @@
-![Cappell-Shaneson Kirby Diagram](https://raw.github.com/KellyJDavis/Andrews-Curtis/gh-pages/Cappell-Shaneson_KirbyDiagram.png)
+![Cappell-Shaneson Kirby Diagram](https://raw.github.com/KellyJDavis/Andrews-Curtis/gh-pages/AkbulutKirby-KirbyDiagram.png)
 
 # Andrews-Curtis
 
