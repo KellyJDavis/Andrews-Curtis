@@ -1,5 +1,3 @@
-SUBDIRS  = src
-
 ac:
 	$(MAKE) -C src ac
 
